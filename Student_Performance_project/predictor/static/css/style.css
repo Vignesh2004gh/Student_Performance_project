@@ -1,0 +1,109 @@
+/* General reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container for centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+/* Card box style */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Titles */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, .form select, .form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus, .form select:focus, .form textarea:focus {
+    border-color: #007BFF;
+}
+
+/* Button */
+.btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Logout link */
+.logout {
+    margin-top: 20px;
+}
+
+.logout a {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logout a:hover {
+    color: #c0392b;
+}
+
+/* Result Box */
+.result-box {
+    text-align: left;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Highlight for result */
+.highlight {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Input</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="title">Enter Student Details</h2>
+            <form method="post" class="form">
+                {% csrf_token %}
+                <div class="form-fields">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="btn">Predict</button>
+            </form>
+            <p class="logout"><a href="{% url 'logout' %}">Logout</a></p>
+        </div>
+    </div>
+</body>
+</html>
